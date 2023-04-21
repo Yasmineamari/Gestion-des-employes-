@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="314.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Question6Controller">
+   <children>
+      <Label fx:id="question2" layoutY="1.0" prefHeight="101.0" prefWidth="480.0" text="6-Quelle est la probabilité que vous recherchez ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="32.0" layoutY="67.0" text="un autre emploi en dehors de l'entreprise ?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="button1" layoutX="185.0" layoutY="128.0" onAction="#action1" text="100%">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="button2" layoutX="185.0" layoutY="165.0" onAction="#action2" text="50%">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="button3" layoutX="185.0" layoutY="200.0" onAction="#action3" text="0%">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXRadioButton>
+      <Button fx:id="suivant" layoutX="167.0" layoutY="254.0" mnemonicParsing="false" onAction="#actionsuivant" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #3b68a7; -fx-background-radius: 32;" text="Suivant ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

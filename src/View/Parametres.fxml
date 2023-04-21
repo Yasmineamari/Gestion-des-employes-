@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ParametresController">
+   <children>
+      <ImageView fitHeight="429.0" fitWidth="300.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../Images/loginM.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="102.0" text="Mode clair">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="ToggOn" layoutX="156.0" layoutY="84.0" onAction="#SombrToClair" text="OFF" toggleColor="#04209c" />
+      <Label layoutX="46.0" layoutY="156.0" text="Notifications">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="ToNotiOn" layoutX="156.0" layoutY="137.0" onAction="#NotifAffiche" text="OFF" toggleColor="#04209c" />
+      <Separator layoutX="49.0" layoutY="221.0" prefWidth="200.0" style="-fx-background-color: #000000;" />
+      <JFXSlider fx:id="LumiSl" layoutX="46.0" layoutY="294.0" onMouseDragEntered="#Luminslide" prefHeight="14.0" prefWidth="200.0" />
+      <Label layoutX="46.0" layoutY="250.0" text="Luminosite">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="195.0" layoutY="339.0" onAction="#Enregistrer" prefHeight="50.0" prefWidth="94.0" text="Enregistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIcon fx:id="retur" glyphName="ARROW_LEFT" layoutX="258.0" layoutY="35.0" onMouseClicked="#ReturntoPrevious" />
+      <JFXButton layoutX="24.0" layoutY="339.0" onAction="#Annuler" prefHeight="50.0" prefWidth="94.0" text="Annuler">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

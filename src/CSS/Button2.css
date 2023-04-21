@@ -1,0 +1,15 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 déc. 2022, 15:35:19
+    Author     : EMNA
+*/
+
+
+.button:hover
+{
+    -fx-background-color: radial-gradient(center 50% -40%, radius 200%, #1d87da 45%, #1a78c2 50%);
+    
+}

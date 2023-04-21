@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="769.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InscriptionController">
+    <children>
+      <Label fx:id="idinscri" layoutX="392.0" layoutY="56.0" prefHeight="53.0" prefWidth="273.0" text="Inscription" textAlignment="CENTER">
+         <font>
+            <Font name="Bell MT Bold" size="44.0" />
+         </font>
+
+      </Label>
+      <ImageView fitHeight="865.0" fitWidth="1360.0" layoutX="-1028.0" layoutY="-89.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/login.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="350.0" layoutY="144.0" prefHeight="18.0" prefWidth="73.0" text="Nom">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="Nom" layoutX="349.0" layoutY="158.0" prefHeight="26.0" prefWidth="129.0" />
+      <JFXTextField fx:id="Prenom" layoutX="523.0" layoutY="158.0" prefHeight="26.0" prefWidth="152.0" />
+      <Label layoutX="523.0" layoutY="143.0" text="Prenom">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="date" layoutX="349.0" layoutY="305.0" prefHeight="26.0" prefWidth="330.0" promptText="AA-MM-JJ" />
+      <Label layoutX="347.0" layoutY="209.0" prefHeight="20.0" prefWidth="80.0" text="Matricule">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="Matricule" layoutX="349.0" layoutY="224.0" prefHeight="26.0" prefWidth="329.0">
+         <tooltip>
+            <Tooltip text="La matricule doit etre 8 chiffres" />
+         </tooltip></JFXTextField>
+      <Label layoutX="348.0" layoutY="269.0" text="Date de Naissance">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="345.0" prefHeight="20.0" prefWidth="49.0" text="Sexe">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="RBf" layoutX="541.0" layoutY="364.0" text="Femme">
+       
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+    
+        
+       
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="RBh" layoutX="416.0" layoutY="364.0" text="Homme">
+   
+         <font>
+            <Font name="Constantia" size="14.0" />
+         </font>
+       
+        
+      </JFXRadioButton>
+      <Label layoutX="347.0" layoutY="408.0" text="Departement">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="ComboDep" layoutX="349.0" layoutY="426.0" onAction="#SelectDep" prefHeight="26.0" prefWidth="330.0" />
+      <Label layoutX="348.0" layoutY="476.0" text="Adresse email">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="email" layoutX="348.0" layoutY="497.0" prefHeight="26.0" prefWidth="330.0" promptText="exemple@gmail.com">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="350.0" layoutY="545.0" text="Mot de passe">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="motdepasseA" layoutX="349.0" layoutY="564.0" prefHeight="26.0" prefWidth="330.0" />
+      <JFXPasswordField fx:id="motdepassR" layoutX="349.0" layoutY="632.0" prefHeight="26.0" prefWidth="330.0" />
+      <JFXPasswordField fx:id="motdepasse" layoutX="348.0" layoutY="564.0" prefHeight="26.0" prefWidth="330.0">
+         <tooltip>
+            <Tooltip text="Votre mot de passe doit contenir 8 caractéres au moins.">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Tooltip>
+         </tooltip></JFXPasswordField>
+     
+      <Label layoutX="350.0" layoutY="615.0" text="Confirmez le mot de passe">
+         <font>
+            <Font name="Book Antiqua" size="14.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="returArr" glyphName="ARROW_LEFT" layoutX="660.0" layoutY="38.0" onMouseClicked="#ReturntoPrevious" size="20" />
+      <CheckBox fx:id="chbox" layoutX="657.0" layoutY="569.0" mnemonicParsing="false" onAction="#affichermotpasse" />
+      <JFXButton fx:id="annul" buttonType="RAISED" layoutX="528.0" layoutY="691.0" onAction="#Annuler" prefHeight="62.0" prefWidth="142.0" stylesheets="@../CSS/Button2.css" text="Annuler">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+        
+
+            </JFXButton>
+      <JFXButton fx:id="enreg" buttonType="RAISED" layoutX="369.0" layoutY="692.0" onAction="#Enregistrer" prefHeight="61.0" prefWidth="126.0" stylesheets="@../CSS/Button2.css" text="Enregistrer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      
+
+            </JFXButton>
+    </children>
+</AnchorPane>

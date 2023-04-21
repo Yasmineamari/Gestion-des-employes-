@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="183.0" layoutY="127.0" prefHeight="400.0" prefWidth="684.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-84.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="62.0" prefWidth="720.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutY="-4.0" prefHeight="27.0" prefWidth="730.0" style="-fx-background-color: #0A1172;" />
+                  <Label fx:id="MENU" layoutX="56.0" layoutY="28.0" prefHeight="34.0" prefWidth="91.0" text="Menu">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="MenuBack" fitHeight="25.0" fitWidth="29.0" layoutX="17.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Bureau/ima2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="Menu" fitHeight="31.0" fitWidth="38.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Bureau/ima4.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="CHERCHER" layoutX="188.0" layoutY="32.0" prefHeight="26.0" prefWidth="143.0" promptText="Chercher " />
+                  <Label fx:id="QUITTER" layoutX="651.0" layoutY="34.0" text="Quitter" textFill="#5e5e6f">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="#5b4848" glyphName="SEARCH" layoutX="300.0" layoutY="50.0" size="17" text="" />
+                  <FontAwesomeIcon fx:id="signout" fill="#4a4b68" glyphName="SIGN_OUT" layoutX="706.0" layoutY="51.0" onMouseClicked="#Quitter" size="15" text="" />
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="362.0" prefWidth="176.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="-2.0" layoutY="-1.0" prefHeight="402.0" prefWidth="185.0" style="-fx-background-color: #0A1172;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-3.0" AnchorPane.topAnchor="-1.0">
+                     <children>
+                        <AnchorPane prefHeight="412.0" prefWidth="222.0">
+                           <children>
+                              <JFXButton layoutY="103.0" onAction="#EVENEMENT" prefHeight="50.0" prefWidth="173.0" stylesheets="@../CSS/Button2.css" text="        Evenement" textFill="#fffdfd">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutY="13.0" onAction="#HOME" prefHeight="50.0" prefWidth="183.0" stylesheets="@../CSS/Button2.css" text="Home   " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="6.0" layoutY="154.0" onAction="#QUIZ" prefHeight="46.0" prefWidth="172.0" stylesheets="@../CSS/Button2.css" text="Quiz    " textFill="#fffdfd">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton layoutX="6.0" layoutY="56.0" onAction="#EMPLOYE" prefHeight="47.0" prefWidth="171.0" stylesheets="@../CSS/Button2.css" text="   Employes" textFill="#fcfcfc">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <FontAwesomeIcon fill="#f2e9e9" glyphName="GROUP" layoutX="14.0" layoutY="88.0" size="25" />
+                              <FontAwesomeIcon fill="#fcfcfc" glyphName="HOME" layoutX="14.0" layoutY="46.0" size="25" text="" />
+                              <FontAwesomeIcon fill="#f8f3f3" glyphName="CALENDAR" layoutX="16.0" layoutY="137.0" size="24" text="" />
+                              <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="12.0" layoutY="158.0">
+                                 <image>
+                                    <Image url="@../Images/quiz.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="10.0" layoutY="202.0" prefHeight="50.0" prefWidth="173.0" stylesheets="@../CSS/Button2.css" text=" Chat      " textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="34.0" fitWidth="29.0" layoutX="17.0" layoutY="215.0">
+                                 <image>
+                                    <Image url="@../Images/chat.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXButton layoutX="2.0" layoutY="250.0" onAction="#PARAMETRE" prefHeight="52.0" prefWidth="182.0" stylesheets="@../CSS/Button2.css" text="        Parametres" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </JFXButton>
+                              <FontAwesomeIcon fill="#f8f5f5" glyphName="COGS" layoutX="18.0" layoutY="288.0" size="25" text="" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="338.0" prefWidth="548.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

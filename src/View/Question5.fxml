@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="314.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Question5">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="492.0" layoutX="-10.0" layoutY="-4.0" pickOnBounds="true">
+         <image>
+            <Image url="@log1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="question5" layoutX="2.0" layoutY="-5.0" prefHeight="101.0" prefWidth="480.0" text="5-Votre responsable vous confie-t-il ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnoui" layoutX="65.0" layoutY="156.0" onAction="#actionoui" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: #3b68a7; -fx-background-radius: 32;" text="Oui">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnnon" layoutX="275.0" layoutY="158.0" onAction="#actionnon" prefHeight="56.0" prefWidth="141.0" style="-fx-background-color: #3b68a7; -fx-background-radius: 32;" text="Non">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="label2" layoutX="15.0" layoutY="61.0" prefHeight="32.0" prefWidth="466.0" text="régulièrement des tâches qui vous font évoluer ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="label3" layoutX="14.0" layoutY="90.0" text="professionnellement ?">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
